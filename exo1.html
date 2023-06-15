@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<body>
+    <form>Faire une multiplication</h1>
+        <div>
+            <input type="number" id="n1" value="" placeholder="Nombre 1">
+        </div>
+        <div>
+            <input type="number"  id="n2" value="" placeholder="Nombre 2">
+        </div>
+        <div>
+          <button type="button" onclick="multiplication()">Voir résultat</button>
+        </div>
+        <div>
+            <input type="number" id="calculMult" placeholder="Resultat">
+        </div>
+    </form>
+
+    <script>
+      function multiplication() {
+    // Declaration de Variables
+    let num1 = parseInt (document.getElementById('n1').value) ;
+    let num2= parseInt (document.getElementById('n2').value);
+
+    // faire le calcul
+    let multiplication = num1*num2;
+
+    // resultat
+     document.getElementById('calculMult').value = multiplication;
+}
+    </script>
+</body>
+</html>
