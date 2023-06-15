@@ -23,17 +23,27 @@
     
 
     <script>
+        //declaration de variables
        var nbrnotes = parseInt(prompt('Entrer le nombre de notes a calculer'));
        var sommeNotes = 0;
        for (var i = 1; i <= nbrnotes; i++) {
         var note = parseFloat(prompt("Entrer la note de l'élève " + i));
-        
+        //calcule de la somme des notes entrés
        sommeNotes += note;
+
+       //calcule de la moyenne
        var moyenne = sommeNotes/nbrnotes;
        }
+
+       // affiche dans la console la somme des notes
        console.log(sommeNotes);
+
+       // affiche dans la console le nombre de notes entrés
        console.log(nbrnotes);
+
+       // affiche dans la console la moyenne
        console.log(moyenne);
+       //condition pour la deuxieme question
        if(note > moyenne, note = nbrnotes ) {
         console.log('les notes superieurs a la moyenne sont de ' + nbrnotes);
        }
